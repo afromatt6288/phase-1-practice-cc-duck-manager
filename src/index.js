@@ -54,11 +54,11 @@ function addDuckLikes() {
     })
 }
 
-function addNewDuck (duckData) {
-    newDuckData = []
+function addNewDuck () {
     let newDuckForm = document.querySelector('#new-duck-form')
     newDuckForm.addEventListener('submit', (e) => {
         e.preventDefault()
+        newDuckData = []
 
         const newDuck = {
             name: (e.target['duck-name-input'].value),
@@ -76,3 +76,6 @@ function addNewDuck (duckData) {
 // Test Data //
 // Duck Name: Duck Sparrow
 // Duck Image Url: https://i.pinimg.com/474x/3a/a1/ce/3aa1ce34d7615c4656dff095dc3524e0.jpg
+//
+// Duck Name: Friar Duck
+// Duck Image URL: https://sc04.alicdn.com/kf/H38d253f8fab045e5a2ba5804d459bed10.jpg
